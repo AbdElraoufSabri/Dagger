@@ -1,14 +1,19 @@
 package io.abdelraouf.learn.dagger;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import javax.inject.Inject;
 
+import io.abdelraouf.learn.dagger.car.Car;
+import io.abdelraouf.learn.dagger.di.CarComponent;
+import io.abdelraouf.learn.dagger.di.DaggerCarComponent;
+
 public class MainActivity extends AppCompatActivity {
 
-    @Inject Car car;
+    @Inject
+    Car car;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

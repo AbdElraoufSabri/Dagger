@@ -1,7 +1,10 @@
-package io.abdelraouf.learn.dagger;
+package io.abdelraouf.learn.dagger.di;
 
 import dagger.Module;
 import dagger.Provides;
+import io.abdelraouf.learn.dagger.car.Rims;
+import io.abdelraouf.learn.dagger.car.Tires;
+import io.abdelraouf.learn.dagger.car.Wheels;
 
 @Module
 public class WheelsModule {

@@ -1,8 +1,8 @@
-package io.abdelraouf.learn.dagger;
+package io.abdelraouf.learn.dagger.car;
 
 import android.util.Log;
 
-class Tires {
+public class Tires {
     private static final String TAG = "Tires_XManoO";
 
     public void inflate() {

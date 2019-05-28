@@ -1,4 +1,4 @@
-package io.abdelraouf.learn.dagger;
+package io.abdelraouf.learn.dagger.car;
 
 public class Wheels {
     private Rims rims;

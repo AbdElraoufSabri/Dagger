@@ -1,4 +1,4 @@
-package io.abdelraouf.learn.dagger;
+package io.abdelraouf.learn.dagger.car;
 
 import android.util.Log;
 
@@ -20,6 +20,7 @@ public class Car {
     }
 
     public void drive(){
+        engine.start();
         Log.d(TAG, "driving ...vroom vrom");
     }
 }

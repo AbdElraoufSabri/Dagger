@@ -1,4 +1,4 @@
-package io.abdelraouf.learn.dagger;
+package io.abdelraouf.learn.dagger.car;
 
 import android.util.Log;
 
