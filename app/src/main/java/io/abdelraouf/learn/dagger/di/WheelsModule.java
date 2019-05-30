@@ -7,7 +7,7 @@ import io.abdelraouf.learn.dagger.car.Tires;
 import io.abdelraouf.learn.dagger.car.Wheels;
 
 @Module
-public class WheelsModule {
+public abstract class WheelsModule {
 
     // State-free
     @Provides

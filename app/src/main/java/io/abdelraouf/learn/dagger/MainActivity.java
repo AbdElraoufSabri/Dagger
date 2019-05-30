@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import io.abdelraouf.learn.dagger.car.Car;
 import io.abdelraouf.learn.dagger.di.CarComponent;
 import io.abdelraouf.learn.dagger.di.DaggerCarComponent;
+import io.abdelraouf.learn.dagger.di.DieselEngineModule;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CarComponent carComponent = DaggerCarComponent.create();
+        CarComponent carComponent = DaggerCarComponent.builder()
+                .dieselEngineModule(new DieselEngineModule(250))
+                .build();
         carComponent.inject(this);
 
         car.drive();
