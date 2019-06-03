@@ -6,21 +6,25 @@ import javax.inject.Inject;
 
 public class Car {
     private static final String TAG = "Car_XManoO";
-    @Inject Engine engine;
+
+    private Driver driver;
+    private Engine engine;
     private Wheels wheels;
 
     @Inject
-    public Car( Wheels wheels) {
+    public Car(Driver driver, Engine engine, Wheels wheels) {
+        this.driver = driver;
+        this.engine = engine;
         this.wheels = wheels;
     }
 
     @Inject
-    public void enableRemote(Remote remote){
+    public void enableRemote(Remote remote) {
         remote.setListener(this);
     }
 
-    public void drive(){
+    public void drive() {
         engine.start();
-        Log.d(TAG, "driving ...vroom vrom");
+        Log.d(TAG, driver + " drives " + this);
     }
 }
